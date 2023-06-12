@@ -4,4 +4,6 @@ export class PostController {
     constructor(
       private  postBussiness: PostBusiness
     ){}
+
+    //endpoints
 }
