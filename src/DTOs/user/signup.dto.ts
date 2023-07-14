@@ -1,5 +1,5 @@
-import z from 'zod'
-
+import z from 'zod';
+import { UserModel } from './types';
 export interface SignupInputDTO {
     name: string,
     email: string,
@@ -16,3 +16,5 @@ export const SignupSchema = z.object({
     email: z.string().email(),
     password: z.string().min(4)
 }).transform(data=> data as SignupInputDTO)
+
+
